@@ -1,0 +1,186 @@
+/* economizarAgua*/
+
+#economizarAgua {
+    padding-top: var(--padding-top);
+    text-align: center;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    box-shadow: 2px 5px 2px 5px #a9a4a464;
+    padding: 2rem;
+    border: 1px solid #ddd;
+}
+
+#litrosEconomizados {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--color-green);
+
+    sub {
+        font-weight: lighter;
+    }
+}
+
+.economizarAgua_subtitle {
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+.gotaIcon {
+    /* color: color-mix(in srgb, rgb(0, 255, 119)50%, rgb(0, 174, 255) 50%); */
+    background: linear-gradient(to top, rgb(28, 114, 213), rgb(115, 141, 208));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.economizarAgua-content__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 4rem;
+}
+
+.enconomizarAgua_btn {
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f3f1f177;
+    transition: var(--trasition);
+
+    &:hover {
+        background-color: var(--colorBg-btnCustom);
+        color: #fff;
+
+    }
+}
+
+#salvarRegistro {
+    margin-top: 4rem;
+    width: 75%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border: none;
+    background-color: var(--colorBg-btnCustom);
+    color: #fff;
+    transition: var(--trasition);
+
+
+    &:hover {
+        background-color: rgb(20, 177, 20);
+        transform: scale(1.2);
+
+    }
+}
+
+.fa-circle-check {
+    color: #fff;
+
+}
+
+.feedBackRegistro {
+    margin-top: 30px;
+    font-size: 25px;
+    color: var(--color-green)
+}
+
+/*---------------------------------------------------------*/
+
+/*meusHabitosSustentáveis*/
+
+#meusHabitosSustentáveis {
+    padding-top: var(--padding-top);
+}
+
+.meusHabitosSustentáveis__subtitle {
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+.habitosPraticados-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.habitosPraticados__item {
+    padding: 10px;
+    font-size: 1.3rem;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px 20px;
+
+}
+
+.habitosPraticados__item input[type='checkbox'] {
+    display: inline-block;
+    transform: scale(1.5);
+    margin-right: 10px;
+
+}
+
+.habitos__img {
+    width: 20px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.habitosSaudaveis__btn {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#salvarHabitos {
+    padding: 10px 20px;
+    background-color: var(--colorBg-btnCustom);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    font-size: 17px;
+    transition: var(--trasition);
+
+
+    &:hover {
+        transform: scale(1.1);
+        background-color: rgb(20, 177, 20);
+    }
+
+}
+
+/*---------------------------------------------------*/
+
+/* dicas sustentaveis*/
+
+#dicasSustentaveis {
+    padding-top: var(--padding-top);
+}
+
+.dicasSustentaveis__subtitle {
+    color: var(--color-green);
+    font-weight: bolder;
+    font-size: 1.8rem;
+
+
+}
+
+
+.habitosSustentaveis__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 2px 5px 2px #ddd;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.lampada{
+    width: 20px;
+}
+
+.habitosPraticados-feedback{
+    color:var(--color-green)
+}

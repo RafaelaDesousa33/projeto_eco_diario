@@ -1,0 +1,7 @@
+@media print {
+    * {
+        color: black;
+        background: white;
+    }
+
+}

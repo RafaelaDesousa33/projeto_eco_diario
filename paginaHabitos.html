@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoDiário</title>
+
+    <!--font awesome 5-->
+    <link rel="stylesheet" href="assets/fontAwesome/fontawesome-free-7.2.0-web/css/all.min.css">
+
+    <!--style css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--pagina habitos-->
+    <link rel="stylesheet" href="assets/css/paginaHabitos.css">
+
+    <!--normalize css-->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+
+    <!-- media-print-->
+    <link rel="stylesheet" href="assets/css/media-print.css">
+
+    <!--media queries-->
+    <link rel="stylesheet" href="assets/css/mediaQueries.css">
+
+    <!--bootsrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+
+
+    <header id="hero-main"> <!--hero-main-->
+
+        <nav class="navbar navbar-expand-lg" id="hero-main__nav"> <!--hero-main__nav-->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="fa-solid fa-leaf"></i>
+                    EcoDiário
+                    <p class="navbar-brand__text">Diário sustentável pessoal</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#meusHabitosSustentáveis">Funcionalidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Como funciona</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link btn-link" href="#">Começar agora
+                                <i class="fa-solid fa-leaf"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav><!--hero-main__nav-->
+
+
+
+    </header><!--hero-main-->
+
+
+    <main class="main"> <!--main-->
+
+
+        <div class="containerEconomizeiAgua">
+
+
+            <section id="economizarAgua" class="container"> <!--economizarAgua-->
+
+                <h2 class="economizarAgua_subtitle">Hoje eu economizei água
+                    <i class="fa-solid fa-droplet gotaIcon"></i>
+                </h2>
+
+                <p>Que tal registrar quanto de água você economizou hoje?</p>
+
+
+                <p id="litrosEconomizados">10<sub>litros</sub></p>
+
+
+                <div class="economizarAgua__content">
+
+                    <div class="economizarAgua-content__buttons">
+                        <button type="button" class="enconomizarAgua_btn" value="5">5<abbr
+                                title="litro">L</abbr></button>
+
+                        <button type="button" class="enconomizarAgua_btn" value="10">10<abbr
+                                title="litro">L</abbr></button>
+
+                        <button type="button" class="enconomizarAgua_btn" value="25">25<abbr
+                                title="litro">L</abbr></button>
+
+                        <button type="button" class="enconomizarAgua_btn" value="50">50<abbr
+                                title="litro">L</abbr></button>
+
+
+                        <button type="button" class="enconomizarAgua_btn" value="100">100<abbr
+                                title="litro">L</abbr></button>
+
+                        <button type="button" class="enconomizarAgua_btn" value="00">Outro</button>
+
+                    </div>
+
+
+                    <button type="button" id="salvarRegistro">Salvar registro <i
+                            class="fa-solid fa-circle-check"></i></button>
+
+
+                    <div class="feedBackRegistro">
+                        <p></p>
+                    </div>
+
+
+                </div>
+
+            </section><!--economizarAgua-->
+
+        </div>
+
+
+        <div class="meuHabitosSustentáveis-container"> <!--meuHabitosSaudaveis-container-->
+
+            <section id="meusHabitosSustentáveis" class="container"> <!--meusHabitosSaudaveis-->
+
+                <h3 class="meusHabitosSustentáveis__subtitle">Meus hábitos sustentáveis</h3>
+                <p>Selecione os hábitos que você praticou hoje:</p>
+
+
+                <div class="habitosPraticados-container"> <!--habitosPraticados-container-->
+
+                    <div class="habitosItem1">
+
+                        <div class="habitosPraticados__item">
+                            <label for="agua">
+                                <img src="assets/imagens/goticula.png" alt="goticula de água" class="habitos__img">
+                                <input type="checkbox" value="economizarAgua" id="agua"> Economizei Água
+                            </label>
+                        </div>
+
+                        <div class="habitosPraticados__item">
+                            <label for="reciclagem">
+                                <img src="assets/imagens/simbolo-de-reciclagem.png" alt="simbolo-de-reciclagem"
+                                    class="habitos__img">
+
+                                <input type="checkbox" value="lixoParaReciclagem" id="reciclagem"> Separei o lixo para
+                                reciclagem
+                            </label>
+
+                        </div>
+
+                        <div class="habitosPraticados__item">
+                            <label for="transporte">
+                                <img src="assets/imagens/bicicleta.png" alt="bicicleta" class="habitos__img">
+
+                                <input type="checkbox" value="transporteSustentavel" id="transporte"> Usei transporte
+                                sustentável
+                            </label>
+
+                        </div>
+
+                        <div class="habitosPraticados__item">
+                            <label for="produtosDescartaveis">
+                                <img src="assets/imagens/lata-de-lixo.png" alt="Lata de lixo" class="habitos__img">
+
+                                <input type="checkbox" value="EvitarprodutosDescartaveis" id="produtosDescartaveis">
+                                Evitei produtos descartáveis
+                            </label>
+                        </div>
+
+                        <div class="habitosPraticados__item">
+                            <label for="empresasLocais">
+                                <img src="assets/imagens/loja-online.png" alt="loja online" class="habitos__img">
+
+                                <input type="checkbox" value="comprarDeEmpresasLocais" id="empresasLocais"> Comprei de
+                                empresas locais
+                            </label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="habitosItem2">
+
+
+                        <div class="habitosPraticados__item">
+                            <label for="energia">
+                                <img src="assets/imagens/instantaneo.png" alt="raio" class="habitos__img">
+
+                                <input type="checkbox" value="economizarEnergia" id="energia"> Economizei energia
+                            </label>
+                        </div>
+
+                        <div class="habitosPraticados__item">
+                            <label for="plantas">
+                                <img src="assets/imagens/plantar.png" alt="planta" class="habitos__img">
+
+                                <input type="checkbox" value="cuidarDePlantas" id="plantas"> Plantei ou cuidei de
+                                plantas
+                            </label>
+                        </div>
+                        <div class="habitosPraticados__item">
+                            <label for="carne">
+                                <img src="assets/imagens/carne.png" alt="carne" class="habitos__img">
+
+                                <input type="checkbox" value="reduzirOConsumoDeCarne" id="carne"> Reduzi o consumo de
+                                carne
+                            </label>
+                        </div>
+                        <div class="habitosPraticados__item">
+                            <label for="reparar">
+                                <img src="assets/imagens/reparo-do-carro.png" alt="ferramentas de reparo"
+                                    class="habitos__img">
+
+                                <input type="checkbox" value="repararAlgo" id="reparar"> Reutilizei ou reparei algo
+                            </label>
+                        </div>
+                        <div class="habitosPraticados__item">
+                            <label for="doacao">
+                                <img src="assets/imagens/lealdade.png" alt="mão segurando um coração"
+                                    class="habitos__img">
+
+                                <input type="checkbox" value="doacaoOuVoluntariado" id="doacao"> Doação ou voluntariado
+                            </label>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div><!--habitosPraticados-container-->
+
+            </section><!--meusHabitosSaudaveis-->
+
+
+            <div class="habitosSaudaveis__btn">
+
+                <button id="salvarHabitos" type="button">Salvar hábitos
+                    <i class="fa-solid fa-circle-check"></i>
+                </button>
+            </div>
+
+
+            <div class="habitosPraticados-feedback text-center mt-4">
+                <p></p>
+            </div>
+
+        </div><!--meuHabitosSaudaveis-container-->
+
+
+        <div class="dicasSustentaveis-container"> <!--dicasSustentaveis-container-->
+
+            <section id="dicasSustentaveis" class="container"> <!--dicasSustentaveis-->
+
+                <h4 class="dicasSustentaveis__subtitle">
+                    <img src="assets/imagens/lampada.png" alt="lampada" class="lampada">
+                    Dica Sustentável
+                </h4>
+
+                <div class="habitosSustentaveis__content"> <!--habitosSustentaveis__content-->
+
+                    <h5 class="habitosSustentaveis-content__subtitle">
+
+
+
+                    </h5>
+
+                    <p class="habitosSustentaveis-content__dica">
+
+
+                    </p>
+
+                </div><!--habitosSustentaveis__content-->
+
+
+            </section><!--dicasSustentaveis-->
+
+        </div><!--dicasSustentaveis-container-->
+
+
+
+    </main><!--main-->
+
+    <div class="footer-container">
+
+        <footer id="footer-main"> <!--footer-main-->
+
+            <div class="footer_logo">
+                <i class="fa-solid fa-leaf"></i>
+                <p class="footer-logo__text">
+                    EcoDiário
+                </p>
+                <p class="navbar-brand__text">Diário sustentável pessoal</p>
+
+
+                <p>
+                    &copy; 2026 EcoDiário - Todos os direitos reservados.
+                </p>
+            </div>
+
+
+            <div class="footer_navegacao">
+
+                <h5 class="footer__subtitle">
+                    Navegação
+                </h5>
+
+                <nav class="footer-navegacao__item footer-nav">
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Funcionalidades</a></li>
+                        <li><a href="">Como funciona</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+
+            <div class="footer_recursos">
+
+                <h5 class="footer__subtitle">
+                    Recursos
+                </h5>
+
+                <nav class="footer-recursos__item footer-nav">
+                    <ul>
+                        <li><a href="#">Dicas sustentáveis</a></li>
+                        <li><a href="#">Glossário</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+
+
+            <div class="footer_sigaNos">
+
+                <h5 class="footer__subtitle">
+                    Siga-nos
+                </h5>
+
+
+                <div class="footer-sigaNos-links">
+                    <a href="https://www.linkedin.com/in/renata-sousa-/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/renata_sousw/"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+
+            </div>
+        </footer><!--footer-main-->
+
+    </div>
+
+    <!--scripts-->
+    <script src="assets/js/economizarAgua.js"></script>
+    <script src="assets/js/habitosSustentaveis.js"></script>
+    <script src="assets/js/dicasSustentaveis,.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
